@@ -228,10 +228,14 @@ h1, h2, h3, h4, h5, h6 {
 /* mobile menu */
 .mobile-menu {
   display: none;
-  position: fixed;
-  inset: var(--nav-h) 0 0 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: calc(100vh - var(--nav-h));
   background: rgba(8,13,24,0.98);
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   z-index: 999;
   padding: 2rem var(--container-p);
   flex-direction: column;
